@@ -1,0 +1,12 @@
+/* styling for body. This properties is the standard */
+
+:root{
+    --primary-black: #333333;
+    --secondary-white: #FFFFFF;
+    --secondary-smokewhite : #D6D6D6;
+}
+
+body{
+
+
+}
