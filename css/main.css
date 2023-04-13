@@ -10,4 +10,55 @@
     --text-size-medium: 500;
     --text-size-bold: 700;
 
+    --font-style-primary : 'Rubik', sans-serif;
+    --font-style-secondary : 'Ubuntu', sans-serif;
+}
+
+
+/* Styling main section of HTML */
+
+
+main{
+    margin : 1rem 5%;
+    font-family: var(--font-style-primary);
+    font-weight: var(--text-size-normal);
+    color: var(--primary-black);
+    background-color: var(--secondary-white);
+}
+
+
+/* Styling top navigation bar  */
+.top__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top__menu{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : .5rem 1rem;
+}
+
+h4.menu__text{
+    color: var(--text-black);
+    font-family: var(--font-style-secondary);
+    font-weight: var(--text-size-medium);
+    font-size: 1.2rem;
+    margin: 0 1rem 0 0;
+}
+
+/* styling hero section  */
+
+.hero{
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.hero__image{
+    width:fit-content;
+    height: fit-content;
 }
