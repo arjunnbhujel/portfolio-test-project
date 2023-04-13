@@ -5,10 +5,10 @@
     --secondary-white: #FFFFFF;
     --secondary-smokewhite : #D6D6D6;
 
-    --text-black: var(var(--primary-black));
-    --text-size-normal: 400;
-    --text-size-medium: 500;
-    --text-size-bold: 700;
+    --font-black: var(var(--primary-black));
+    --font-size-normal: 400;
+    --font-size-medium: 500;
+    --font-size-bold: 700;
 
     --font-style-primary : 'Rubik', sans-serif;
     --font-style-secondary : 'Ubuntu', sans-serif;
@@ -21,7 +21,7 @@
 main{
     margin : 1rem 5%;
     font-family: var(--font-style-primary);
-    font-weight: var(--text-size-normal);
+    font-weight: var(--font-size-normal);
     color: var(--primary-black);
     background-color: var(--secondary-white);
 }
@@ -43,9 +43,9 @@ main{
 }
 
 h4.menu__text{
-    color: var(--text-black);
+    color: var(--font-black);
     font-family: var(--font-style-secondary);
-    font-weight: var(--text-size-medium);
+    font-weight: var(--font-size-medium);
     font-size: 1.2rem;
     margin: 0 1rem 0 0;
 }
@@ -53,12 +53,84 @@ h4.menu__text{
 /* styling hero section  */
 
 .hero{
-    margin: 1rem 0;
+    height: auto;
+    margin: 3rem 0;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(380px,1fr)) ;
+    column-gap: 3.5rem;
+    row-gap:3.5rem;
 }
 
-.hero__image{
-    width:fit-content;
-    height: fit-content;
+/* Styling hero text  */
+
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: var(--font-style-primary);
+}
+
+h5.hello{
+    font-family: var(--font-style-secondary);
+    font-size: 2.125rem;
+    font-weight: var(--font-size-medium);
+    margin: 0;
+}
+
+
+h1.intro__name{
+    font-size: 4.625rem;
+    font-weight: var(--font-size-bold);
+    margin: 1.5rem 0;
+}
+
+h2.intro__role{
+    font-size: 2.2rem;
+    font-weight: var(--font-size-normal);
+    margin: 0 0 1.5rem 0;
+}
+
+p.intro__summary{
+    font-size: 1.5rem;
+    font-weight: var(--font-size-normal);
+    margin: 0;
+}
+
+/* styling hero image  */
+img.hero__image{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+
+/* Styling Social Icon and Scroll  */
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* Social Icon */
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.space{
+    width: 15.875rem;
+    height: auto;
+}
+
+p.scroll{
+    margin: 0 0 1rem 0;
 }
