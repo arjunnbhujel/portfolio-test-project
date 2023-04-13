@@ -4,9 +4,10 @@
     --primary-black: #333333;
     --secondary-white: #FFFFFF;
     --secondary-smokewhite : #D6D6D6;
-}
 
-body{
-
+    --text-black: var(var(--primary-black));
+    --text-size-normal: 400;
+    --text-size-medium: 500;
+    --text-size-bold: 700;
 
 }
