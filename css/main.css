@@ -216,7 +216,7 @@ span{
 
 }
 
-/* Styling image container  */
+/* Styling image container  inside portfolio */
 .img__container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
