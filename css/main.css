@@ -80,8 +80,8 @@ h5.hello{
 
 h1.intro__name{
     font-size: 4.625rem;
-    font-weight: var(--font-size-bold);
-    margin: 1.5rem 0;
+    font-weight: var(--font-size-normal);
+    margin: 1rem 0;
 }
 
 h2.intro__role{
@@ -191,4 +191,47 @@ p.skill{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Styling Portfolio  */
+.portfolio{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+p.portfolio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+span{
+    width: 2rem;
+    height: 2px;
+    background-color: var(--primary-black);
+
+}
+
+/* Styling image container  */
+.img__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem 1rem;
+    column-gap: 1rem;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+img.port{
+    width: 100%;
+    height: auto;
 }
